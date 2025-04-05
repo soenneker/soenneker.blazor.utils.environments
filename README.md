@@ -12,7 +12,7 @@ dotnet add package Soenneker.Blazor.Utils.Environments
 ```
 
 ```html
-<script src="_content/js/blazorenvironmentsutil.js"></script>
+<script src="_content/Soenneker.Blazor.Utils.Environments/js/blazorenvironmentsutil.js"></script>
 <script src="_framework/blazor.webassembly.js" autostart="false"></script>
 
 <script>
