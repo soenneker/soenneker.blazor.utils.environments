@@ -1,17 +1,16 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Blazor.Utils.Environments.Tests;
 
-[Collection("Collection")]
-public class BlazorEnvironmentUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class BlazorEnvironmentUtilTests : HostedUnitTest
 {
-    public BlazorEnvironmentUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public BlazorEnvironmentUtilTests(Host host) : base(host)
     {
 
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
